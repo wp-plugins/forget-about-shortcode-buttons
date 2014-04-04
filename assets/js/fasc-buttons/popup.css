@@ -1,0 +1,244 @@
+
+body
+{
+	padding:0;
+	margin:0;
+	overflow:visible;
+
+}
+
+html
+{
+	overflow-y:hidden;
+}
+
+
+#button-dialog label { font-weight:bold; }
+#button-dialog { font-size:14px; }
+#button-dialog .inputrow { padding: 7px 0; height: auto; display:block; clear:both; }
+#button-dialog .inputrowc { padding: 0 0 7px 0; height: auto; display:block; clear:both; }
+#button-dialog .inputrow.wbreak { margin-bottom:5px; border-bottom: 1px solid #cccccc; }
+#button-dialog .inputrow > label { display: block; float: left; margin: 0 0 0 0; width: 15%; text-align:left; line-height:26px; }
+#button-dialog .inputrow > .inputwrap { display: block; float: right; width: 85%; text-align:right; }
+#button-dialog .inputrow > .inputwrap input[type="text"] { width:90%; }
+
+#button-dialog .inputrowc > label { display: block; margin: 0 0 0 0; text-align:left; line-height:26px; }
+#button-dialog .inputrowc > .inputwrap { display: block;}
+
+#button-dialog select, #button-dialog input { display: inline-block; auto; padding: 3px 5px; font-size:14px; }
+#button-dialog .inputrow > .inputwrap > select, #button-dialog .inputrow > .inputwrap > input { float: right;  }
+#button-dialog #insert { display: block; line-height: 24px; text-align: center; margin: 15px 15px 0 0; float: right; font-size:14px; }
+.preview-button-area { display: block; text-align:center; border:1px dashed #aaaaaa; height:90px; padding:5px; margin:15px; overflow:auto;}
+
+small
+{
+	color:#888;
+}
+
+input[type="text"], select
+{
+	color:#333333;
+}
+#button-dialog .main input
+{
+	padding:7px;
+}
+input[type="text"]
+{
+	
+}
+.inputcol.left
+{
+	float:left;
+	width:45%;
+}
+.inputcol.right
+{
+	float:right;
+	width:45%;
+}
+
+.inputcol.right, .inputcol.right label, .inputcol.right .inputrowc > label
+{
+	/*text-align:right;*/
+}
+
+.inputcol .inputrow label, .inputcol .inputrow .inputwrap
+{
+	width:auto;
+	display:block;
+	float:none;
+	
+}
+
+.clear
+{
+	clear:both;
+	height:0;
+	font-size:0;
+	text-indent:-1000px;
+	border:0;
+	display:block;
+}
+.preview-button-area:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.centered-button
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#button-dialog #button-color, #button-dialog #text-color
+{
+	padding-left:30px;
+}
+
+
+#tab-header
+{
+	display:block;
+	padding-top:0;
+	margin:15px 10px 0 15px;
+}
+
+#tab-header ul, #tab-header li
+{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style-type:none;
+	list-style:none;
+}
+#tab-header li
+{
+	padding:10px;
+	float:left;
+	margin-right:5px;
+}
+#tab-header li.active
+{
+	border:1px solid #cccccc;
+	border-bottom:none;	
+	background-color:#ffffff;
+	z-index:100;
+	position:relative;
+	margin-bottom:-1px;
+}
+
+#tab-header a
+{
+	text-decoration:none;
+	color: #666666;
+}
+
+#tab-header li a
+{
+	color:#21759b;
+}
+#tab-header li a:hover
+{
+	color:#d54e21;
+}
+#tab-header li.active a
+{
+	color:#333333;
+	
+}
+
+.fasc-tab-content
+{
+	border-top:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+	background-color:#ffffff;
+	padding-top:10px;
+	z-index:10;
+	position:relative;
+	padding:20px 25px 10px 25px;
+	
+}
+#tab-2-content
+{
+	display:none;
+}
+#tab-2-content .ico-grid
+{
+	height:220px;
+	overflow-y:scroll;
+	/*background-color:#fafafa;*/
+	
+}
+
+#tab-2-content .ico-grid div
+{
+	font-size:30px;
+	display:block;
+	width:14%;
+	height:50px;
+	margin-right:5px;
+	margin-bottom:5px;
+	background-color:#f7fdff;
+	border:1px solid #f7fdff;
+	float:left;
+	display:table-cell;
+	vertical-align:center;
+	text-align:center;
+	line-height:50px;
+	color:#666666;
+	cursor:pointer;
+	border-radius:3px;
+}
+#tab-2-content .ico-grid div:hover
+{
+	color:#333333;
+	border:1px solid #cccccc;
+}
+#tab-2-content .ico-grid div.active, #tab-2-content .ico-grid div.active:hover
+{
+	color:#000000;
+	background-color:#eff8fb;
+	border:1px solid #aaaaaa;
+}
+
+#tab-2-content table
+{
+	width:100%;
+}
+
+#tab-2-content table td
+{
+	background-color:#cccccc;
+	text-align:center;
+	vertical-align:center;
+	padding:10px;
+}
+#tab-2-content label
+{
+	font-weight:normal;
+}
+
+#fasc-footer
+{
+	position:absolute;
+	padding:15px 0;
+	bottom:0;
+	left:0;
+	text-align:right;
+	display:block;
+	width:100%;
+}
+
+/*
+a.fasc-button
+{
+    -webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+}*/
