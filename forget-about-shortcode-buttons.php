@@ -6,7 +6,7 @@ Description: A visual way to add buttons in the post editor screen.
 Author: Designs & Code
 Author URI: http://www.designsandcode.com/
 License: GPL v3
-Version: 1.0.0
+Version: 1.0.1
 Text Domain: fascbuttons
 */
 
@@ -14,7 +14,7 @@ Text Domain: fascbuttons
 * Set up Plugin Globals
 */
 if (!defined('FASC_BUTTONS_VERSION_NUM'))
-    define('FASC_BUTTONS_VERSION_NUM', '1.0.0');
+    define('FASC_BUTTONS_VERSION_NUM', '1.0.1');
 	
 if (!defined('PLUGIN_SLUG'))
     define('PLUGIN_SLUG', 'fasc-buttons');
