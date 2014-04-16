@@ -1,14 +1,14 @@
 === Forget About Shortcode Buttons ===
 Contributors: DesignsAndCode
 Donate link: 
-Tags: button, shortcode, edit, buttons, wysiwyg, post editor, tinymce, shortcodes, button editor
+Tags: css, button, shortcode, edit, visual editor, buttons, wysiwyg, post editor, tinymce, shortcodes, button editor
 Requires at least: 3.9
 Tested up to: 3.9
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A visual way to add buttons in the post editor screen and to your themes.
+A visual way to add CSS buttons in the post editor screen and to your themes.
 
 == Installation ==
 
@@ -19,7 +19,7 @@ For basic usage, you can also have a look at the [plugin homepage](http://www.de
 
 == Frequently Asked Questions ==
 
-
+Ask me some questions!
 
 == Screenshots ==
 
@@ -31,11 +31,18 @@ For basic usage, you can also have a look at the [plugin homepage](http://www.de
 
 == Changelog ==
 
-= 1.0.1 =
-* JS error Fix for IE9
+= 1.0.2 =
+* Added subtle rollovers to buttons
+* Improved HTML output - removed nearly all cases of using the `data-` attributes on buttons - much cleaner code
+* Optimized JS functions for performance
 
 = 1.0.1 =
+* JS error Fix for IE9
+* prefixed the .rounded css classes
+
+= 1.0.0 =
 * Initial Release
+
 
 == Upgrade Notice ==
 
@@ -44,6 +51,8 @@ For basic usage, you can also have a look at the [plugin homepage](http://www.de
 == Description ==
 
 **This plugin is only compatible with WordPress 3.9 and upwards**
+
+**Feature requests/ideas welcome!**
 
 Forget About Shortcode (FASC) Buttons are a visual way to add CSS buttons in the post editor screen and to your themes.  Instead of adding shortcodes in the post editor, you insert real, styled buttons - making the process of adding buttons to your posts and pages much more natural whilst improving the appearance and usability of the post editor.
 
@@ -56,6 +65,8 @@ Editing a button couldn't be easier - just double click a button and an options 
 Utilises the latest CSS properties for styling
 
 Includes Dashicons to add to your buttons and use in your themes.
+
+**Your ratings mean a lot - if you like the plugin please consider leaving a review.**
 
 = Links =
 

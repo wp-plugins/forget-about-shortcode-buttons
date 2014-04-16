@@ -1,9 +1,9 @@
 @import url(button-styles.css);
 
-/* Add overwrites as needed so that the content of the editor field is attractive and not broken */
 body { background: #ffffff; } 
 
 .fasc-button
 {
-	cursor:help;
+	cursor:help !important;
 }
+

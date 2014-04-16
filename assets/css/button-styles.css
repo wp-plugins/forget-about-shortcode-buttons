@@ -11,7 +11,8 @@ a.fasc-button:hover
 {
 	text-decoration:none;
 }
-a.fasc-button.fasc-ico:before
+
+a.fasc-button.fasc-ico:before, a.fasc-button.fasc-ico-before:before
 {
 	vertical-align:middle;
     display: inline-block;
@@ -19,31 +20,30 @@ a.fasc-button.fasc-ico:before
     -webkit-font-smoothing: antialiased;
 	margin-top:-2px;
 }
-a.fasc-size-xsmall.fasc-ico:before {
+a.fasc-size-xsmall.fasc-ico:before, a.fasc-size-xsmall.fasc-ico-before:before
+{
    
     font:400 12px/1 dashicons;
 	padding-right:4px;
 	
 }
-a.fasc-size-small.fasc-ico:before {
-   
+a.fasc-size-small.fasc-ico:before, a.fasc-size-small.fasc-ico-before:before
+{   
     font:400 14px/1 dashicons;
 	padding-right:4px;
-	
 }
-a.fasc-size-medium.fasc-ico:before {
-   
+a.fasc-size-medium.fasc-ico:before, a.fasc-size-medium.fasc-ico-before:before
+{
     font:400 16px/1 dashicons;
 	padding-right:5px;
-	
 }
-a.fasc-size-large.fasc-ico:before
+a.fasc-size-large.fasc-ico:before, a.fasc-size-large.fasc-ico-before:before
 {
 	font:400 20px/1 dashicons;
 	padding-right:6px;
 	line-height:22px;
 }
-a.fasc-size-xlarge.fasc-ico:before
+a.fasc-size-xlarge.fasc-ico:before, a.fasc-size-xlarge.fasc-ico-before:before
 {
 	font:400 28px/1 dashicons;
 	padding-right:6px;
@@ -51,12 +51,6 @@ a.fasc-size-xlarge.fasc-ico:before
 }
 
 /* sizes */
-
-span.fasc-editor-hidden
-{
-	display:none;
-}
-
 .fasc-size-xsmall
 {
 	font-size:10px;
@@ -93,15 +87,22 @@ span.fasc-editor-hidden
 
 
 /* Types */
+.fasc-type-flat:hover
+{
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
 
 /* glossy */
+
 .fasc-type-glossy
-{
-	
+{	
 	background-color: #247edd;
-	
 	border:1px solid rgba(0,0,0, 0.1);
-	/*text-shadow:1px solid rgba(0,0,0, 0.1);*/
+	/*text-shadow:5px solid rgba(0,0,0, 0.5);*/
 	
 	/*-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
 	box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);*/
@@ -111,6 +112,17 @@ span.fasc-editor-hidden
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 	
 }
+.fasc-type-glossy:hover
+{
+	/*-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);*/
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), 0(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.1));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.1));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.1));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.1));
+	
+}
+
 .fasc-type-glossy.fasc-size-xlarge
 {
 	
@@ -131,8 +143,6 @@ span.fasc-editor-hidden
 {
 	
 }
-
-
 
 
 
@@ -167,26 +177,64 @@ span.fasc-editor-hidden
 	-moz-box-shadow: 3px 3px 0px #777777;
 	box-shadow: 3px 3px 0px #777777;
 }
+.fasc-type-popout.fasc-size-xlarge:hover
+{
+	-webkit-box-shadow: 5px 5px 0px #777777;
+	-moz-box-shadow: 5px 5px 0px #777777;
+	box-shadow: 5px 5px 0px #777777;
+}
+.fasc-type-popout.fasc-size-large:hover
+{
+	-webkit-box-shadow: 4px 4px 0px #777777;
+	-moz-box-shadow: 4px 4px 0px #777777;
+	box-shadow: 4px 4px 0px #777777;
+}
+.fasc-type-popout.fasc-size-medium:hover
+{
+	-webkit-box-shadow: 3px 3px 0px #777777;
+	-moz-box-shadow: 3px 3px 0px #777777;
+	box-shadow: 3px 3px 0px #777777;
+}
+.fasc-type-popout.fasc-size-small:hover
+{
+	-webkit-box-shadow: 3px 3px 0px #777777;
+	-moz-box-shadow: 3px 3px 0px #777777;
+	box-shadow: 3px 3px 0px #777777;
+}
+.fasc-type-popout.fasc-size-xsmall:hover
+{
+	-webkit-box-shadow: 2px 2px 0px #777777;
+	-moz-box-shadow: 2px 2px 0px #777777;
+	box-shadow: 2px 2px 0px #777777;
+}
 
+
+.fasc-type-popout:hover
+{
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
 
 /* rounded */
-.rounded.fasc-size-xlarge
+a.fasc-button.rounded.fasc-size-xlarge, .fasc-rounded-medium.fasc-size-xlarge
 {
 	border-radius:15px;
 }
-.rounded.fasc-size-large
+a.fasc-button.rounded.fasc-size-large, .fasc-rounded-medium.fasc-size-large
 {
 	border-radius:10px;
 }
-.rounded.fasc-size-medium
+a.fasc-button.rounded.fasc-size-medium, .fasc-rounded-medium.fasc-size-medium
 {
 	border-radius:9px;
 }
-.rounded.fasc-size-small
+a.fasc-button.rounded.fasc-size-small, .fasc-rounded-medium.fasc-size-small
 {
 	border-radius:8px;
 }
-.rounded.fasc-size-xsmall
+a.fasc-button.rounded.fasc-size-xsmall, .fasc-rounded-medium.fasc-size-xsmall
 {
 	border-radius:7px;
 }

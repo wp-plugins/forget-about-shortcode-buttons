@@ -82,11 +82,11 @@ var source = "<?php echo $source; ?>";
 							<div class="inputwrap">
 								<select name="button-type" id="button-type">
 									<option value="fasc-type-flat" selected="selected">Flat</option>
-									<option value="fasc-type-flat rounded">Flat Rounded</option>
+									<option value="fasc-type-flat fasc-rounded-medium">Flat Rounded</option>
 									<option value="fasc-type-glossy">Glossy</option>
-									<option value="fasc-type-glossy rounded">Glossy Rounded</option>
+									<option value="fasc-type-glossy fasc-rounded-medium">Glossy Rounded</option>
 									<option value="fasc-type-popout">Pop out</option>
-									<option value="fasc-type-popout rounded">Pop out Rounded</option>
+									<option value="fasc-type-popout fasc-rounded-medium">Pop out Rounded</option>
 								</select>
 							</div>
 							<div class="clear"></div>

@@ -2,11 +2,11 @@
 /*
 Plugin Name: Forget About Shortcode Buttons
 Plugin URI: http://www.designsandcode.com/551/wordpress-forget-about-shortcode-buttons/
-Description: A visual way to add buttons in the post editor screen.
+Description: A visual way to add CSS buttons in the post editor screen.
 Author: Designs & Code
 Author URI: http://www.designsandcode.com/
 License: GPL v3
-Version: 1.0.1
+Version: 1.0.2
 Text Domain: fascbuttons
 */
 
@@ -14,7 +14,7 @@ Text Domain: fascbuttons
 * Set up Plugin Globals
 */
 if (!defined('FASC_BUTTONS_VERSION_NUM'))
-    define('FASC_BUTTONS_VERSION_NUM', '1.0.1');
+    define('FASC_BUTTONS_VERSION_NUM', '1.0.2');
 	
 if (!defined('PLUGIN_SLUG'))
     define('PLUGIN_SLUG', 'fasc-buttons');
@@ -51,8 +51,7 @@ if ( ! class_exists( 'FascButtons' ) )
 		private $has_form_posted = false;
 
 		public function __construct()
-		{
-			
+		{			
 			//admin styles
 			add_action( 'admin_enqueue_scripts', array($this, 'fasc_admin_styles') );
 			add_filter( 'mce_css', array($this,'plugin_mce_css') );
@@ -62,7 +61,6 @@ if ( ! class_exists( 'FascButtons' ) )
 			
 			//regular styles
 			add_action( 'wp_print_styles', array($this, 'fasc_fe_styles') );
-			
 			
 		}
 		public function fasc_fe_styles()
@@ -111,7 +109,6 @@ if ( ! class_exists( 'FascButtons' ) )
 		   array_push( $buttons, "|", 'fascbuttons' );
 		   return $buttons;
 		}
-
 	}
 }
 
