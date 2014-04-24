@@ -155,10 +155,10 @@
 			<div data-code="f483" class="dashicons dashicons-universal-access"></div>
 			<div data-code="f486" class="dashicons dashicons-tickets"></div>
 			<div data-code="f484" class="dashicons dashicons-nametag"></div>
-			<div data-code="f481" class="dashicons dashicons-organizer"></div>
+			<!--<div data-code="f481" class="dashicons dashicons-organizer"></div>
 			<div data-code="f487" class="dashicons dashicons-sponsor"></div>
 			<div data-code="f488" class="dashicons dashicons-speaker"></div>
-			<div data-code="f489" class="dashicons dashicons-session"></div>
+			<div data-code="f489" class="dashicons dashicons-session"></div>-->
 			
 
 			<!-- internal/products -->
@@ -233,3 +233,4 @@
 			<div data-code="f471" class="dashicons dashicons-tablet"></div>
 			<div data-code="f470" class="dashicons dashicons-smartphone"></div>
 			<div data-code="f328" class="dashicons dashicons-smiley"></div>
+			

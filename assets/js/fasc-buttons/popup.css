@@ -156,7 +156,6 @@ input[type="text"]
 	border-top:1px solid #cccccc;
 	border-bottom:1px solid #cccccc;
 	background-color:#ffffff;
-	padding-top:10px;
 	z-index:10;
 	position:relative;
 	padding:20px 25px 10px 25px;
@@ -165,16 +164,51 @@ input[type="text"]
 #tab-2-content
 {
 	display:none;
+	/*padding-top:10px;*/
 }
 #tab-2-content .ico-grid
 {
 	height:220px;
 	overflow-y:scroll;
+	position:relative;
 	/*background-color:#fafafa;*/
 	
 }
-
-#tab-2-content .ico-grid div
+#tab-2-content .ico-grid .grid-container
+{
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+	width:100%;
+	height:auto;
+}
+#tab-2-content .ico-grid .grid-container:first-child
+{
+	/*display:block;*/
+}
+#tab-2-content .ico-grid .grid-container.ico-screen-active
+{
+	display:block;
+}
+#tab-2-content .inputwrap.left
+{
+	width:48%;
+	float:left;
+	text-align:left;
+}
+#tab-2-content .inputwrap.left select
+{
+	float:none;
+	margin-top:-3px;
+}
+#tab-2-content .inputwrap.right
+{
+	width:48%;
+	float:right;
+	text-align:right;
+}
+#tab-2-content .ico-grid div div:not(.clear)
 {
 	font-size:30px;
 	display:block;
@@ -193,12 +227,17 @@ input[type="text"]
 	cursor:pointer;
 	border-radius:3px;
 }
-#tab-2-content .ico-grid div:hover
+#tab-2-content .ico-grid div div:hover
 {
 	color:#333333;
 	border:1px solid #cccccc;
 }
-#tab-2-content .ico-grid div.active, #tab-2-content .ico-grid div.active:hover
+#tab-2-content .ico-grid .fontawesome div
+{
+	font-size:26px;
+}
+
+#tab-2-content .ico-grid div div.active, #tab-2-content .ico-grid div div.active:hover
 {
 	color:#000000;
 	background-color:#eff8fb;

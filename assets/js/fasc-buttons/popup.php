@@ -19,6 +19,7 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="../../../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
 <link rel="stylesheet" href="../../css/button-styles.css" />
+<link rel="stylesheet" href="../../css/font-awesome.css" />
 <script src="jquery.minicolors.min.js"></script>
 <link rel="stylesheet" href="jquery.minicolors.css">
 <link rel="stylesheet" href="popup.css">
@@ -124,7 +125,7 @@ var source = "<?php echo $source; ?>";
 					<div class="inputwrap">
 						<select name="button-align" id="button-align" size="1">
 							<option value="" selected="selected">None</option>
-							<option value="left"=>Left</option>
+							<option value="left">Left</option>
 							<option value="right">Right</option>
 						</select>
 					</div>
@@ -134,9 +135,23 @@ var source = "<?php echo $source; ?>";
 			
 			<div id="tab-2-content" class="fasc-tab-content">
 				<div class="inputrow">
-					<label><strong>Position</strong></label>
-					<div class="inputwrap">
+					<div class="inputwrap left">
+						<select id="icon-type-select">
+							<option value="dashicons-grid">Dashicons</option>
+							<option value="fa-web-grid">Web</option>
+							<option value="fa-media-grid">Media</option>
+							<option value="fa-form-grid">Form</option>
+							<option value="fa-currency-grid">Currency</option>
+							<option value="fa-editor-grid">Editor</option>
+							<option value="fa-directional-grid">Directional</option>
+							<option value="fa-brand-grid">Brand</option>
+							<option value="fa-medical-grid">Medical</option>
+						</select>
+						</label>
+					</div>
 					
+					<div class="inputwrap right">
+
 						<label><input type="radio" name="fasc-ico-position" value="none" class="fasc-ico-position" checked="checked" /> None</label>
 						<label><input type="radio" name="fasc-ico-position" value="before" class="fasc-ico-position" /> Before</label>
 						<!--<label><input type="radio" name="fasc-ico-position" value="after" /> After</label>
@@ -147,8 +162,52 @@ var source = "<?php echo $source; ?>";
 				</div>
 				
 				<div class="ico-grid">
-					<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
-					<?php require_once("dashicons-grid.php"); ?>
+					<div class="grid-container" id="dashicons-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("dashicons-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-media-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-media-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-form-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-form-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-web-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-web-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-currency-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-currency-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-editor-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-editor-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-directional-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-directional-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-brand-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-brand-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="grid-container fontawesome" id="fa-medical-grid">
+						<input type="hidden" value="" id="fasc-ico-val" name="fasc-ico-val" />
+						<?php require_once("fa-medical-grid.php"); ?>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
 				</div>
 			</div>
 			<div id="fasc-footer">	

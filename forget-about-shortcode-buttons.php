@@ -6,7 +6,7 @@ Description: A visual way to add CSS buttons in the post editor screen.
 Author: Designs & Code
 Author URI: http://www.designsandcode.com/
 License: GPL v3
-Version: 1.0.2
+Version: 1.0.3
 Text Domain: fascbuttons
 */
 
@@ -14,7 +14,7 @@ Text Domain: fascbuttons
 * Set up Plugin Globals
 */
 if (!defined('FASC_BUTTONS_VERSION_NUM'))
-    define('FASC_BUTTONS_VERSION_NUM', '1.0.2');
+    define('FASC_BUTTONS_VERSION_NUM', '1.0.3');
 	
 if (!defined('PLUGIN_SLUG'))
     define('PLUGIN_SLUG', 'fasc-buttons');
@@ -66,6 +66,7 @@ if ( ! class_exists( 'FascButtons' ) )
 		public function fasc_fe_styles()
 		{
 			wp_enqueue_style( 'fasc-buttons-style', plugins_url( '/assets/css/button-styles.css' , __FILE__ ) );
+			wp_enqueue_style( 'font-awesome-style', plugins_url( '/assets/css/font-awesome.min.css' , __FILE__ ) );
 		}
 		public function fasc_admin_styles()
 		{

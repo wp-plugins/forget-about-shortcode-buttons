@@ -1,10 +1,10 @@
 === Forget About Shortcode Buttons ===
 Contributors: DesignsAndCode
-Donate link: 
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZAHPNUHNUBQJY&lc=GB&item_name=Ross%20Morsali&item_number=wordpress%2dplugin&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
 Tags: css, button, shortcode, edit, visual editor, buttons, wysiwyg, post editor, tinymce, shortcodes, button editor
 Requires at least: 3.9
 Tested up to: 3.9
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ Ask me some questions!
 
 
 == Changelog ==
+
+= 1.0.3 =
+* Added [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/) :)
+* Updated Icon Selector UI - no scrolling to find the icon you just used! :)
 
 = 1.0.2 =
 * Added subtle rollovers to buttons
