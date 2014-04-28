@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZAHPN
 Tags: css, button, shortcode, edit, visual editor, buttons, wysiwyg, post editor, tinymce, shortcodes, button editor
 Requires at least: 3.9
 Tested up to: 3.9
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ Ask me some questions!
 
 
 == Changelog ==
+
+= 1.0.4 =
+* Bug fix - properly use WP versioning and cache busting methods - upgrading to 1.0.3 caused some layout errors for some users as assets were being loaded from the cache - should be no more problems regarding caching and updating the plugin now
 
 = 1.0.3 =
 * Added [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/) :)
@@ -64,11 +67,11 @@ https://www.youtube.com/watch?v=BA9ruSe-i1A
 
 FASC Buttons tries to be as clean as possible with the html, only using data attributes for necessary features - the buttons you use in the post editor use the exact same classes as on the front end of your site with no extra or hidden markup to make them behave this way.
 
-Editing a button couldn't be easier - just double click a button and an options panel appears allowing you to completely reconfigure the current button - beats tedious shortcodes and using precise syntax!
+* Editing a button couldn't be easier - just double click a button and an options panel appears allowing you to completely reconfigure the current button - beats tedious shortcodes and using precise syntax!
 
-Utilises the latest CSS properties for styling
+* Utilises the latest CSS properties for styling
 
-Includes Dashicons to add to your buttons and use in your themes.
+* Includes Dashicons & [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/) to add to your buttons and use in your themes.
 
 **Your ratings mean a lot - if you like the plugin please consider leaving a review.**
 

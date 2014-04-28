@@ -3,6 +3,16 @@
 	$source = "insert";
 	$title = "Insert Button";
 	$insert_text = "Insert";
+	if(isset($_GET['ver']))
+	{
+		$fasc_plugin_ver = $_GET['ver'];
+	}
+	else
+	{
+		$fasc_plugin_ver = "";
+	}
+	
+	
 	if(isset($_GET['source']))
 	{
 		if($_GET['source']=="click")
@@ -17,16 +27,16 @@
 <head>
 <title><?php echo $title; ?></title>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script language="javascript" type="text/javascript" src="../../../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
-<link rel="stylesheet" href="../../css/button-styles.css" />
-<link rel="stylesheet" href="../../css/font-awesome.css" />
-<script src="jquery.minicolors.min.js"></script>
-<link rel="stylesheet" href="jquery.minicolors.css">
-<link rel="stylesheet" href="popup.css">
+<script language="javascript" type="text/javascript" src="../../../../../../wp-includes/js/tinymce/tiny_mce_popup.js?ver=<?php echo $fasc_plugin_ver; ?>"></script>
+<link rel="stylesheet" href="../../css/button-styles.css?ver=<?php echo $fasc_plugin_ver; ?>" />
+<link rel="stylesheet" href="../../css/font-awesome.css?ver=<?php echo $fasc_plugin_ver; ?>" />
+<script src="jquery.minicolors.min.js?ver=<?php echo $fasc_plugin_ver; ?>"></script>
+<link rel="stylesheet" href="jquery.minicolors.css?ver=<?php echo $fasc_plugin_ver; ?>">
+<link rel="stylesheet" href="popup.css?ver=<?php echo $fasc_plugin_ver; ?>">
 <script type="text/javascript">
 var source = "<?php echo $source; ?>"; 
 </script>
-<script type="text/javascript" src="popup.js"></script>
+<script type="text/javascript" src="popup.js?ver=<?php echo $fasc_plugin_ver; ?>"></script>
 </head>
 <body>
 
@@ -46,6 +56,8 @@ var source = "<?php echo $source; ?>";
 				<ul>
 					<li class="active"><a href="#tab-1-content">Properties</a></li>
 					<li><a href="#tab-2-content">Icon</a></li>
+					<!--<li><a href="#tab-3-content">My Buttons</a></li>-->
+					<!--<li><a href="#tab-4-content"><div data-code="f111" class="dashicons dashicons-admin-generic active"></div></a></li>-->
 				</ul><div class="clear"></div>
 			</div>
 			

@@ -6,7 +6,7 @@ Description: A visual way to add CSS buttons in the post editor screen.
 Author: Designs & Code
 Author URI: http://www.designsandcode.com/
 License: GPL v3
-Version: 1.0.3
+Version: 1.0.4
 Text Domain: fascbuttons
 */
 
@@ -14,7 +14,7 @@ Text Domain: fascbuttons
 * Set up Plugin Globals
 */
 if (!defined('FASC_BUTTONS_VERSION_NUM'))
-    define('FASC_BUTTONS_VERSION_NUM', '1.0.3');
+    define('FASC_BUTTONS_VERSION_NUM', '1.0.4');
 	
 if (!defined('PLUGIN_SLUG'))
     define('PLUGIN_SLUG', 'fasc-buttons');
@@ -57,6 +57,7 @@ if ( ! class_exists( 'FascButtons' ) )
 			add_filter( 'mce_css', array($this,'plugin_mce_css') );
 			
 			//admin script
+			//add_action( 'admin_enqueue_scripts', array($this, 'add_plugin_ver_to_js') );
 			add_action('init', array($this,'tiny_mce_fasc_button'));
 			
 			//regular styles
@@ -65,12 +66,12 @@ if ( ! class_exists( 'FascButtons' ) )
 		}
 		public function fasc_fe_styles()
 		{
-			wp_enqueue_style( 'fasc-buttons-style', plugins_url( '/assets/css/button-styles.css' , __FILE__ ) );
-			wp_enqueue_style( 'font-awesome-style', plugins_url( '/assets/css/font-awesome.min.css' , __FILE__ ) );
+			wp_enqueue_style( 'fasc-buttons-style', plugins_url( '/assets/css/button-styles.css' , __FILE__ ), array(), FASC_BUTTONS_VERSION_NUM );
+			wp_enqueue_style( 'font-awesome-style', plugins_url( '/assets/css/font-awesome.min.css' , __FILE__ ), array(), FASC_BUTTONS_VERSION_NUM );
 		}
 		public function fasc_admin_styles()
 		{
-			wp_enqueue_style( 'fasc-buttons-style', plugins_url( '/assets/css/fasc-buttons.css' , __FILE__ ) );
+			wp_enqueue_style( 'fasc-buttons-style', plugins_url( '/assets/css/fasc-buttons.css' , __FILE__ ), array(), FASC_BUTTONS_VERSION_NUM);
 		}
 		
 		public function plugin_mce_css( $mce_css )
@@ -78,17 +79,27 @@ if ( ! class_exists( 'FascButtons' ) )
 			if ( ! empty( $mce_css ) )
 				$mce_css .= ',';
 
-			$mce_css .= plugins_url( '/assets/css/custom-editor-style.css' , __FILE__ );
+			$mce_css .= plugins_url( '/assets/css/custom-editor-style.css?ver='.FASC_BUTTONS_VERSION_NUM , __FILE__ );
 			
 			return $mce_css;
 		}
 		
 		public function add_mce_plugin( $plugin_array )
 		{
-		   $plugin_array["fascbuttons"] = plugins_url( '/assets/js/'.PLUGIN_SLUG.'/scripts.js' , __FILE__ );
+		   $plugin_array["fascbuttons"] = plugins_url( '/assets/js/'.PLUGIN_SLUG.'/scripts.js?ver='.FASC_BUTTONS_VERSION_NUM , __FILE__ );
 		   return $plugin_array;
 		}
-
+		
+		function add_plugin_ver_to_js() {
+		?>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var fasc_buttons_ver = <?php echo FASC_BUTTONS_VERSION_NUM; ?>;/* ]]> */
+		</script>
+		<?php
+		}
+		
+		
 		public function tiny_mce_fasc_button()
 		{
 
