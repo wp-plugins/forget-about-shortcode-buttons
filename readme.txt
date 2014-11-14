@@ -59,7 +59,7 @@ Ask me some questions!
 
 **This plugin is only compatible with WordPress 3.9 and upwards**
 
-**Feature requests/ideas welcome!**
+**Support is limited - we will be back with the next update :)**
 
 Forget About Shortcode (FASC) Buttons are a visual way to add CSS buttons in the post editor screen and to your themes.  Instead of adding shortcodes in the post editor, you insert real, styled buttons - making the process of adding buttons to your posts and pages much more natural whilst improving the appearance and usability of the post editor.
 
