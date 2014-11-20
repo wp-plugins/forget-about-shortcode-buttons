@@ -6,7 +6,7 @@ Description: A visual way to add CSS buttons in the post editor screen.
 Author: Designs & Code
 Author URI: http://www.designsandcode.com/
 License: GPL v3
-Version: 1.0.4
+Version: 1.1.0
 Text Domain: fascbuttons
 */
 
