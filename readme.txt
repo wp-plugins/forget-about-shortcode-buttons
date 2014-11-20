@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZAHPN
 Tags: css, button, shortcode, edit, visual editor, buttons, wysiwyg, post editor, tinymce, shortcodes, button editor
 Requires at least: 3.9
 Tested up to: 3.9
-Stable tag: 1.0.4
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ Ask me some questions!
 
 
 == Changelog ==
+
+= 1.1.0 =
+* Save buttons!
+* Prevent directory listing of folders by adding blank index.php files to all folders - silence is golden!
 
 = 1.0.4 =
 * Bug fix - properly use WP versioning and cache busting methods - upgrading to 1.0.3 caused some layout errors for some users as assets were being loaded from the cache - should be no more problems regarding caching and updating the plugin now

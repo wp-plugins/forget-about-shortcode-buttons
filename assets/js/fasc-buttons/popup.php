@@ -35,8 +35,9 @@
 <link rel="stylesheet" href="popup.css?ver=<?php echo $fasc_plugin_ver; ?>">
 <script type="text/javascript">
 var source = "<?php echo $source; ?>"; 
+var ajax_url = "<?php echo $_GET['ajaxurl']; ?>"; 
 </script>
-<script type="text/javascript" src="popup.js?ver=<?php echo $fasc_plugin_ver; ?>"></script>
+<script type="text/javascript" src="popup.min.js?ver=<?php echo $fasc_plugin_ver; ?>"></script>
 </head>
 <body>
 
@@ -44,10 +45,11 @@ var source = "<?php echo $source; ?>";
 	<!-- http://www.tinymce.com/develop/bugtracker_view.php?id=5575 -->
 	
 	<div id="button-dialog">
-		<div class="preview-button-area">
+		<div class="preview-button-area" style="position:relative;">
 			<div class="centered-button">
 				
 			</div>
+			<a href="#" class="fa fa-save save-btn"></a>
 		</div>
 		
 		<form action="/" method="get" accept-charset="utf-8">
@@ -56,8 +58,8 @@ var source = "<?php echo $source; ?>";
 				<ul>
 					<li class="active"><a href="#tab-1-content">Properties</a></li>
 					<li><a href="#tab-2-content">Icon</a></li>
-					<!--<li><a href="#tab-3-content">My Buttons</a></li>-->
-					<!--<li><a href="#tab-4-content"><div data-code="f111" class="dashicons dashicons-admin-generic active"></div></a></li>-->
+					<li><a href="#tab-3-content">Templates</a></li>
+					<!--<li class="settings"><a href="#tab-4-content"><div data-code="f111" class="dashicons dashicons-admin-generic active"></div></a></li>-->
 				</ul><div class="clear"></div>
 			</div>
 			
@@ -219,6 +221,25 @@ var source = "<?php echo $source; ?>";
 						<?php require_once("fa-medical-grid.php"); ?>
 						<div class="clear"></div>
 					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div id="tab-3-content" class="fasc-tab-content saved-buttons-tab">
+				
+				<div class="container-grid">
+					
+					<ul>
+					</ul>				
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div id="tab-4-content" class="fasc-tab-content">
+				<strong>Button Attributes</strong>
+				<div class="container-grid">
+					
+					
+					
 					<div class="clear"></div>
 				</div>
 			</div>

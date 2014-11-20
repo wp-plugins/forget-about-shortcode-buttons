@@ -117,6 +117,7 @@ input[type="text"]
 	list-style:none;
 
 }
+
 #tab-header li
 {
 	padding:10px;
@@ -135,6 +136,10 @@ input[type="text"]
 	margin-bottom:-1px;
 }
 
+#tab-header li.settings
+{
+	float:right;
+}
 #tab-header a
 {
 	text-decoration:none;
@@ -163,11 +168,17 @@ input[type="text"]
 	z-index:10;
 	position:relative;
 	padding:20px 25px 10px 25px;
+	display:none;
 	
 }
+#tab-1-content
+{
+	display:block;
+}
+
 #tab-2-content
 {
-	display:none;
+	/*display:none;*/
 	/*padding-top:10px;*/
 }
 #tab-2-content .ico-grid
@@ -178,6 +189,7 @@ input[type="text"]
 	/*background-color:#fafafa;*/
 	
 }
+
 #tab-2-content .ico-grid .grid-container
 {
 	position:absolute;
@@ -264,6 +276,151 @@ input[type="text"]
 {
 	font-weight:normal;
 }
+
+#tab-4-content .container-grid
+{
+	height:240px;
+	overflow-y:scroll;
+	position:relative;
+	/*background-color:#fafafa;*/
+	
+}
+
+.saved-buttons-tab .container-grid
+{
+	margin-top:10px;
+	height:250px;
+	overflow:hidden;
+	overflow-y:scroll;
+	
+}
+
+.saved-buttons-tab .container-grid ul,
+.saved-buttons-tab .container-grid li
+{
+	list-style:none;
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	
+}
+
+.saved-buttons-tab .container-grid li .wrap .name .fasc-button-edit
+{
+	color:#eee;
+	position:relative;
+	z-index:9999;
+}
+
+.saved-buttons-tab .container-grid li .wrap:hover .name .fasc-button-edit
+{
+	color:#333 !important;
+}
+
+.saved-buttons-tab .container-grid li .fasc-button-remove
+{
+	width:auto;
+	font-weight:bold;
+	color:#ccc;
+	display:block;
+	text-align:right;
+	color:#eee;
+	z-index:9999;
+	position:relative;
+}
+
+.saved-buttons-tab .container-grid li:hover .fasc-button-remove
+{
+	color:#d93030 !important;
+}
+
+.saved-buttons-tab .container-grid li
+{
+	padding-right:20px;
+	position:relative;
+}
+
+.saved-buttons-tab .container-grid li .wrap
+{
+	margin-bottom: 5px;
+	background-color: #f7fdff;
+	border: 1px solid #f7fdff;
+	text-align: left;
+	cursor: pointer;
+	border-radius: 3px;
+	padding:5px 10px;
+	position:relative;
+	line-height:20px;
+	height:auto;
+	
+	
+}
+.saved-buttons-tab .container-grid li .wrap .full_button
+{
+	display:none;
+}
+
+.saved-buttons-tab .container-grid li .wrap .name
+{
+	width:220px;
+	margin-right:10px;
+	vertical-align:bottom;
+	float:left;
+	z-index:9999;
+	position:relative;
+}
+.saved-buttons-tab .container-grid li .wrap .col
+{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	margin-left:5px;
+	float:right;
+}
+
+.saved-buttons-tab .container-grid li .wrap:after
+{
+	content: "";
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.saved-buttons-tab .container-grid li .wrap .fasc-button-update
+{
+	display:none;
+}
+
+.saved-buttons-tab .container-grid li .wrap .fasc-button-update[data-action="remove"]
+{
+	
+	margin-top:3px;
+}
+
+.saved-buttons-tab .container-grid li .wrap:hover
+{
+	color:#333333;
+	border:1px solid #cccccc;
+}
+.saved-buttons-tab .container-grid li .wrap.active
+{
+	color:#000000;
+	background-color:#eff8fb;
+	border:1px solid #aaaaaa;
+}
+
+a.save-btn
+{
+	position:absolute;bottom:10px;right:10px;font-size:24px;color:rgba(0,0,0,0.2);text-decoration:none;
+}
+.save-btn:hover
+{
+	color:rgba(0,0,0,0.5);
+}
+
 
 #fasc-footer
 {
